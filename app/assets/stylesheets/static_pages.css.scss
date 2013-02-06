@@ -2,16 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-ul.sub {
-	transition: 0s display;
-    transition-delay:1s;
-}
-
-#mainNavSub:hover a.how-it-works {
-	color: #FF9232;
-}
-
-#mainNavSub:hover ul.sub {
+#mainNavSub ul.sub {
 	display: block;
-	
+	height: 1px;
+	top: -9999px;
+	opacity: 0;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s; /* Firefox 4 */
+	-webkit-transition: opacity 1s; /* Safari and Chrome */
+	-o-transition: opacity 1s; /* Opera */
 }
+
+li#mainNavSub:hover a.how-it-works {
+	color: #ff9232
+}
+
+li#mainNavSub:hover ul.sub {
+	top: -5px;
+	opacity: 1;
+	height: 75px;
+}
+
+ 
