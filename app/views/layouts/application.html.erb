@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Purchasingpower</title>
+  <title><%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+<!-- Google Website Optimizer Control Script -->
+<script>
+function utmx_section(){}function utmx(){}
+(function(){var k='3686152262',d=document,l=d.location,c=d.cookie;function f(n){
+if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.indexOf(';',i);return escape(c.substring(i+n.
+length+1,j<0?c.length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;
+d.write('<sc'+'ript src="'+
+'http'+(l.protocol=='https:'?'s://ssl':'://www')+'.google-analytics.com'
++'/siteopt.js?v=1&utmxkey='+k+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='
++new Date().valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"></sc'+'ript>')})();
+</script><script>utmx("url",'A/B');</script>
+<!-- End of Google Website Optimizer Control Script -->
+<!-- Google Website Optimizer Tracking Script -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['gwo._setAccount', 'UA-18076635-4']);
+  _gaq.push(['gwo._trackPageview', '/3686152262/test']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End of Google Website Optimizer Tracking Script -->
+<title>Purchasing Power - Employee Purchase Program | Computers, Appliances, Electronics</title>
+<meta name="description" content="Purchasing Power is an employee purchase program for computers, laptops, appliances and home electronics.  Through our employee purchase program, employees can make manageable monthly payments through a payroll deduction. Ask your employer to add Purchasing Power to your employee benefits package today."/>
+<meta name="keywords" content="Purchasing Power, employee purchase program, employee benefits, payroll deduction, computer purchase program, appliances, electronics, laptops, loan alternative"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- PPC Build Num: S2013-01-R2-B29 -->
+<!-- SVN Revision Num: 1918 -->
+<!-- Host: ecom-sf-04.purchasingpwr.com-->
+
+<link rel="stylesheet" href="http://www.purchasingpower.com/storefront/css/hdrFtr-opt.css?S2013-1-loyalty-1" type="text/css" />
+<link rel="stylesheet" href="http://www.purchasingpower.com/storefront/css/style-additions.css?S2013-1-loyalty-1" type="text/css" />
+<link rel="stylesheet" href="http://www.purchasingpower.com/storefront/css/yui-container.css?S2013-1-loyalty-1" type="text/css" />
+<link rel="stylesheet" href="http://www.purchasingpower.com/storefront/css/home-opt.css?S2013-1-loyalty-1" type="text/css" />
+<!-- placed at top so that it loads before page renders -->
+<!--[if lte IE 6]>
+    <script type="text/javascript" src="/storefront/js/ui/ie6PngFix.js?S2013-1-loyalty-1"></script>
+<![endif]-->
+
+<!-- begin google analytics -->
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-18076635-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+<!-- end google analytics -->    
+<!-- Begin Hiconversion Head Enabling. Do NOT move. Must come directly before the closing head tag -->
+<script id="hiconversion_head_script" type="text/javascript">
+  var hiconversion_load = new Date();
+  function hiconversion_head_load() {
+    var external ="PrcEe30zpC";
+    var script = document.createElement("script");
+    script.id = "hiconversion_head_include";
+    script.async = "async";
+    script.type = "text/javascript";
+    script.src = (document.location.protocol == "https:" ? "https://ssl" : "http://update") + ".hiconversion.com/app/update?async=true&external=" + external + "&version=2.0";
+    var nodes = document.getElementsByTagName("script");
+    if (nodes.length > 0) {
+      nodes[0].parentNode.insertBefore(script, nodes[0]);
+    }
+  }
+  hiconversion_head_load();
+</script>
+
+<!-- End Hiconversion Head Enabling -->
+
 </head>
-<body>
+
+<body id="home-body" class="yui-skin-sam"  style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/homeBg.gif?S2013-1-loyalty-1'); background-repeat:repeat-x;">
+
 
 <%= yield %>
 

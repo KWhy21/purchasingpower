@@ -1,2 +1,730 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, 'Purchasing Power Sandbox') %>
+<div id="wrapper">
+		<div id="header" class="clearfix">
+
+	<div id="branding" class="group">
+		<h1 class="logo"><a href="/storefront/spring/home" name="&lid=Header_Logo">Purchasing Power</a></h1>
+		<h1 class="partner">
+		</h1>		
+	</div>
+	<div id="navigation">
+		<div id="utility" class="group">
+			<ul class="secondaryNav">
+					
+						<li >
+							<a href="/storefront/spring/home"
+							
+							name="&lid=Header_Home">Home</a>
+						</li>
+					
+						<li >
+							<a href="/storefront/spring/about-purchasing-power"
+							
+							name="&lid=Header_About">About Us</a>
+						</li>
+					
+						<li >
+							<a href="https://www.purchasingpower.com/storefront/spring/login"
+							
+							name="&lid=Header_Login">Log In</a>
+						</li>
+					
+						<li >
+							<a href="https://www.purchasingpower.com/storefront/spring/create-profile"
+							
+							name="&lid=Header_Register">Register</a>
+						</li>
+					
+					
+						<li class="last">
+							<a href="/storefront/spring/contact/start"
+							
+							name="&lid=Header_Contact">Contact Us</a>
+						</li>
+			</ul>
+			<p class="contact">Order by Phone <span class="tel">1.888.923.6236</span></p>
+		</div>
+		<div id="mainNav">
+			<ul>
+					
+						<li id="mainNavSub">
+							<a href="/storefront/spring/how-it-works"
+							class="how-it-works"
+							
+							
+							name="&lid=Header_HowItWorks">How It Works</a>
+								<ul class="sub">
+										
+											<li>
+												<a href="/storefront/spring/how-it-works/value"
+												
+												
+												name="&lid=Header_HowItWorks_Value">Value and Benefits</a>
+											</li>
+										
+											<li>
+												<a href="/storefront/spring/how-it-works/pricing"
+												
+												
+												name="&lid=Header_HowItWorks_Pricing">About Our Pricing</a>
+											</li>
+										
+											<li>
+												<a href="/storefront/spring/how-it-works/take-the-tour"
+												
+												
+												name="&lid=Header_HowItWorks_Tour">Take the Tour</a>
+											</li>
+										
+								</ul>
+						</li>
+					
+						<li>
+							<a href="/storefront/spring/products"
+							
+							id="products-menu"
+							
+							name="&lid=Header_Products">Products</a>
+						</li>
+					
+						<li>
+							<a href="/storefront/spring/customer-support"
+							
+							
+							
+							name="&lid=Header_Support">Customer Support</a>
+						</li>
+					
+						<li>
+							<a href="/storefront/spring/my-account"
+							
+							
+							
+							name="&lid=Header_Account">My Account</a>
+						</li>
+			</ul>
+				<ul class="social group">
+						<li><a href="http://www.facebook.com/PurchasingPower" target="_blank" title="Facebook"><img src="http://www.purchasingpower.com/mediasvr/storefront/social/header-facebook.gif" alt="Facebook"/></a></li>
+						<li><a href="http://www.linkedin.com/companies/purchasing-power" target="_blank" title="LinkedIn"><img src="http://www.purchasingpower.com/mediasvr/storefront/social/header-linkedin.gif" alt="LinkedIn"/></a></li>
+						<li><a href="http://twitter.com/purchasingpower" target="_blank" title="Twitter"><img src="http://www.purchasingpower.com/mediasvr/storefront/social/header-twitter.gif" alt="Twitter"/></a></li>
+						<li><a href="http://www.youtube.com/PurchasingPowerTV" target="_blank" title="YouTube"><img src="http://www.purchasingpower.com/mediasvr/storefront/social/header-youtube.gif" alt="YouTube"/></a></li>
+				</ul>
+		</div>
+	</div>			
+			<div id="home-page-content">
+
+			<div id="consumer-content" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/consumer-bg.jpg?S2013-1-loyalty-1');">
+				<div id="hero">
+					
+					<div id="about">
+					
+						<div class="hero-nav">
+								<a id="about-tab-on" href="#" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/about.png?S2013-1-loyalty-1'); background-repeat:no-repeat;" onclick="document.getElementById('about').style.visibility = 'visible'; document.getElementById('brands').style.visibility = 'hidden'; document.getElementById('compare').style.visibility = 'hidden';" title="About"><span>About</span></a></li>
+								<a id="brands-tab" href="#" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/brands.png?S2013-1-loyalty-1'); background-repeat:no-repeat; " onclick="document.getElementById('about').style.visibility = 'hidden'; document.getElementById('brands').style.visibility = 'visible'; document.getElementById('compare').style.visibility = 'hidden';" title="Brands"><span>Brands</span></a>
+								<a id="compare-tab" href="#" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/compare.png?S2013-1-loyalty-1'); background-repeat:no-repeat;" onclick="document.getElementById('about').style.visibility = 'hidden'; document.getElementById('brands').style.visibility = 'hidden'; document.getElementById('compare').style.visibility = 'visible';" title="Why Us?"><span>Why Us?</span></a>
+						
+						</div><!-- /hero-nav -->
+
+						<div id="hero-content">
+							<h3>The premier employee purchase program.</h3>
+							<h4>Products you want. Budgets you'll stick to.</h4>
+
+<ul>
+<li>Purchase computers, appliances <span class="italic">and
+more</span> via payroll deduction.</li>
+<li>Budgeting is easy with manageable payments over 12 months.</li>
+<li>With payroll deduction, you won&#39;t risk missing a
+payment.</li>
+<li>Spending limits are based on your eligibility.</li>
+</ul>
+					<br/>
+					
+					<p>
+							<a id="register-now-lg" href="#" onclick="document['registerForm'].submit();" title="Register Now" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/butnRegister_lg.png?S2013-1-loyalty-1');"><span>Register Now</span></a>
+					</p>
+					
+					<p>
+						<a class="hero-secondary-link video-link" href="/storefront/spring/how-it-works/take-the-tour" title="Take the tour">Take the tour</a><br/>
+						<a class="hero-secondary-link" href="/storefront/spring/how-it-works" title="How it works">How it works</a><br/>
+						<!--<a class="hero-secondary-link" href="#" title="Budgeting">More about budgeting</a>-->
+					</p>
+					
+					</div><!-- /hero-content -->
+						
+					<div id="hero-space-shell" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/hero-space-shell.png?S2013-1-loyalty-1'); background-repeat:no-repeat;"></div>
+					
+					<div id="about-rotating-image" class="slideshow">
+							<img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/aspirational-image-01.jpg" >
+							<img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/aspirational-image-05.jpg" style="display: none;">
+							<img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/aspirational-image-03.jpg" style="display: none;">
+							<img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/aspirational-image-06.jpg" style="display: none;">
+							<img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/aspirational-image-04.jpg" style="display: none;">
+							<img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/aspirational-image-02.jpg" style="display: none;">
+					
+					</div>
+					
+					<div id="about-background"></div>
+						
+					</div><!-- /about -->
+					
+				
+					<div id="brands" style="visibility: hidden;">
+										
+						<div class="hero-nav" >
+								<a id="about-tab" href="#" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/about.png?S2013-1-loyalty-1');background-repeat:no-repeat; " onclick="document.getElementById('about').style.visibility = 'visible'; document.getElementById('brands').style.visibility = 'hidden'; document.getElementById('compare').style.visibility = 'hidden';" title="About"><span>About</span></a></li>
+								<a id="brands-tab-on" href="#" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/brands.png?S2013-1-loyalty-1');background-repeat:no-repeat;" onclick="document.getElementById('about').style.visibility = 'hidden'; document.getElementById('brands').style.visibility = 'visible'; document.getElementById('compare').style.visibility = 'hidden';" title="Brands"><span>Brands</span></a>
+								<a id="compare-tab" href="#" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/compare.png?S2013-1-loyalty-1');background-repeat:no-repeat;" onclick="document.getElementById('about').style.visibility = 'hidden'; document.getElementById('brands').style.visibility = 'hidden'; document.getElementById('compare').style.visibility = 'visible';" title="Why Us?"><span>Why Us?</span></a>
+						
+						</div><!-- /hero-nav -->
+	
+						<div id="hero-content">
+								<h3>The premier employee purchase program.</h3>
+							<h4>Great brands and exclusive upgrades.</h4>
+							
+
+<ul>
+<li>Shop popular brands such as <span class="bold">Samsung</span>,
+<span class="bold">Apple</span>, <span class="bold">Sony</span>,
+<span class="bold">Kenmore</span>, and <span
+class="bold">Dell</span>.</li>
+<li>Extended warranties, upgrades and accessories are included in
+the price.</li>
+<li>Available product bundles offer convenience and value.</li>
+</ul>
+						
+						<br/>
+						
+						<p>
+							<a id="register-now-lg" href="#" onclick="document['registerForm'].submit();" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/butnRegister_lg.png?S2013-1-loyalty-1');" title="Register Now"><span>Register Now</span></a>
+						</p>
+						
+						<p>
+							<a class="hero-secondary-link" href="/storefront/spring/products" title="View products">View products</a><br/>
+							<!-- <a class="hero-secondary-link" href="#" title="Budgeting">More about budgeting</a> -->
+						</p>
+						
+						</div><!-- /hero-content -->
+							
+						<div id="hero-space-shell" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/hero-space-shell.png?S2013-1-loyalty-1'); background-repeat:no-repeat;"></div>
+						
+						<div id="brands-rotating-image"><img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/brands-products-DEFAULT.png"></div>
+						
+						<div id="brands-background" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/brands-background.jpg?S2013-1-loyalty-1'); background-repeat:no-repeat;"></div>
+							
+						</div><!-- /brands -->
+										
+										
+					<div id="compare" style="visibility: hidden;">
+										
+						<div class="hero-nav">
+								<a id="about-tab" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/about.png?S2013-1-loyalty-1');background-repeat:no-repeat;" href="#" onclick="document.getElementById('about').style.visibility = 'visible'; document.getElementById('brands').style.visibility = 'hidden'; document.getElementById('compare').style.visibility = 'hidden';" title="About"><span>About</span></a></li>
+								<a id="brands-tab" href="#" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/brands.png?S2013-1-loyalty-1');background-repeat:no-repeat; " onclick="document.getElementById('about').style.visibility = 'hidden'; document.getElementById('brands').style.visibility = 'visible'; document.getElementById('compare').style.visibility = 'hidden';" title="Brands"><span>Brands</span></a>
+								<a id="compare-tab-on" href="#" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/compare.png?S2013-1-loyalty-1');background-repeat:no-repeat;" onclick="document.getElementById('about').style.visibility = 'hidden'; document.getElementById('brands').style.visibility = 'hidden'; document.getElementById('compare').style.visibility = 'visible';" title="Why Us?"><span>Why Us?</span></a>
+						
+						</div><!-- /hero-nav -->
+		
+						<div id="compare-content">
+								<h3>The premier employee purchase program.</h3>
+							<h4>Why choose Purchasing Power over other financing options?</h4>
+						
+
+<ul>
+<li>All-inclusive price</li>
+<li>No ballooning interest</li>
+<li>No late fees</li>
+</ul>
+						
+						<br/>
+						
+						<p>
+							<a id="register-now-lg" href="#" onclick="document['registerForm'].submit();" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/butnRegister_lg.png?S2013-1-loyalty-1') " title="Register Now"><span>Register Now</span></a>
+						</p>
+						
+						<p>
+							<a class="hero-secondary-link" href="/storefront/spring/how-it-works/value" title="More about the values and benefits of our program">More about the values and benefits of our program</a><!--<br/>
+							<a class="hero-secondary-link" href="#" title="Budgeting">More about budgeting</a>-->
+						</p>
+						
+						</div><!-- /about-content -->
+							
+						<div id="hero-space-shell" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/hero-space-shell.png?S2013-1-loyalty-1'); background-repeat:no-repeat;"></div>
+						
+						<div id="compare-image"><img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/compare-chart.png"></div>
+						
+						<div id="compare-background" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/compare-background.jpg?S2013-1-loyalty-1');"></div>
+							
+						</div><!-- /compare -->										
+				
+				
+				</div><!-- /hero -->
+				
+				<div id="site-login" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/login-box.jpg?S2013-1-loyalty-1'); background-position:0 0;">
+				<div id="member-services" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/login_divider.gif?S2013-1-loyalty-1');background-repeat:no-repeat; background-position:6px bottom;">
+				  <form name="loginForm" id="member-login_form" class="login-first" action="https://www.purchasingpower.com/storefront/j_spring_security_check" method="POST" onSubmit="return controller.checkFields()">
+				    <fieldset>
+				        <h4 class="top">Member Login</h4>
+				        <fieldset>
+				            <label for="user-id">User ID</label><a href="javascript:void(0)" id="login-username-info">What is this?</a>
+				            <input type="email" name="j_username" id="user-id" value=""/>
+				        </fieldset>
+				        <fieldset class="field-password">
+				            <label for="password">Password</label>
+				            <input type="password" name="j_password" id="password" />
+				        </fieldset>
+				        <fieldset id="login-options">
+				            <input type="checkbox" name="rememberMe" id="rememberMe" />
+				            <label for="rememberMe">Remember Me</label>
+				            <p><a href="https://www.purchasingpower.com/storefront/spring/login/forgot-password">Forgot Password?</a></p>
+				            <p><input type="submit" class="submit" id="login-sm" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/butnLogin_sm.png?S2013-1-loyalty-1') " value=""/></p>
+				        </fieldset>
+				    </fieldset>
+				    <input type="hidden" name="domain" value=""/>
+				  </form>
+				</div>
+				<div id="new-members">
+				  <h4>New to Purchasing Power?</h4>
+				  <a id="register-now-sm" href="#" onclick="document['registerForm'].submit();" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/butnRegister_sm.png?S2013-1-loyalty-1') " title="New to Purchasing Power?"><span>Register Now</span></a>
+				</div>
+
+				</div><!-- /member-login -->
+				
+				<div id="testimonials">
+				<a id="testimonials_link" target="_blank" href="http://app.mypowerstory.com/service/searchEverything.kickAction?as=25237&mediaType=blog&sortType=recent&includeBlog=on" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/testimonial_btn.jpg?S2013-1-loyalty-1');" title="View Testimonials"><span>View Testimonials</span></a>
+				</div><!-- /testimonials -->
+			
+			</div><!-- consumer-content -->		
+			
+				<div id="navigation-featured-brands">
+				    <div id="navigation-featured-brands-inner">
+				        <h3>Featured Brands</h3>
+				        <a href="javascript:void(0);" id="rotator-featured-brands-left" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/control-left.png?S2013-1-loyalty-1');">&nbsp;</a>
+				        <div id="rotator-featured-brands-constraint">
+				          <ul id="rotator-featured-brands">
+					            <li id="Acer">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-acer.png" width="39" height="40" alt="Acer" />
+					            </li>
+					            <li id="Craftsman">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-craftsman.png" width="74" height="40" alt="Craftsman" />
+					            </li>
+					            <li id="Dell">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-dell.png" width="38" height="40" alt="Dell" />
+					            </li>
+					            <li id="HP">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-hp.png" width="36" height="40" alt="HP" />
+					            </li>
+					            <li id="Intel">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-intel.png" width="33" height="40" alt="Intel" />
+					            </li>
+					            <li id="Kenmore">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-kenmore.png" width="80" height="40" alt="Kenmore" />
+					            </li>
+					            <li id="Lenovo">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-lenovo.png" width="70" height="40" alt="Lenovo" />
+					            </li>
+					            <li id="Microsoft">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-microsoft.png" width="68" height="40" alt="Microsoft" />
+					            </li>
+					            <li id="Panasonic">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-panasonic.png" width="80" height="40" alt="Panasonic" />
+					            </li>
+					            <li id="Samsung">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-samsung.png" width="64" height="40" alt="Samsung" />
+					            </li>
+					            <li id="Sony">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-sony.png" width="64" height="40" alt="Sony" />
+					            </li>
+					            <li id="Toshiba">
+					              <img src="http://www.purchasingpower.com/mediasvr/storefront/homepage-opt/logo-toshiba.png" width="80" height="40" alt="Toshiba" />
+					            </li>
+				          </ul>
+				        </div>
+				        <a href="javascript:void(0);" id="rotator-featured-brands-right" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/control-right.png?S2013-1-loyalty-1');">&nbsp;</a>
+				    </div>
+				</div><!-- featured-brands -->	
+			
+			
+			<div id="non-consumer-content" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/non-consumer-bg.gif?S2013-1-loyalty-1'); ">
+				<div id="for-employers">
+				<h4>Employers</h4>
+				<img src="http://www.purchasingpower.com/storefront/i/home-opt/employer-pic.jpg?S2013-1-loyalty-1" width="82" height="91" alt="Employers" />
+				<p>Are you offering the fastest growing voluntary benefit to your employees? Learn how Purchasing Power makes your benefits package more competitive.</p>
+				<a id="learn-more-sm" href="http://www.purchasingpower.com/employers/" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/butnLearnMore.png?S2013-1-loyalty-1');" title="Learn More"><span>Learn More</span></a>
+				</div>
+				<div id="for-brokers">
+				<h4>Brokers</h4>
+				<img src="http://www.purchasingpower.com/storefront/i/home-opt/broker-pic.jpg?S2013-1-loyalty-1" width="82" height="91" alt="Brokers" />
+				<p>Do you have the fastest growing voluntary benefit in your portfolio? Provide a winning solution to your clients!</p>
+				<a id="learn-more-sm" href="http://www.purchasingpower.com/brokers/" title="Learn More" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/butnLearnMore.png?S2013-1-loyalty-1');"><span>Learn More</span></a>
+				</div>
+				<div id="pp-blog">
+				<div id="blog-icon" style="background-image:url('http://www.purchasingpower.com/storefront/i/home-opt/blog-icon-sm.png?S2013-1-loyalty-1');"></div>
+				<h4><a href="http://173.203.243.67" title="Blog">Blog</a></h4>
+				</div>
+			</div><!-- non-consumer-content -->	
+		
+		
+
+<form id="registerForm" name="registerForm" action="https://www.purchasingpower.com/storefront/spring/create-profile" method="GET">
+</form>
+			</div>
+		</div>
+		        
+		
+	</div>
+  <div id="footer-wrapper-home" >
+
+
+
+	<div id="footer" class="clearfix">
+		<div class="trust-info">
+			<table width="135" border="0" cellpadding="2" cellspacing="0" title="Click to Verify - This site chose VeriSign SSL for secure e-commerce and confidential communications.">
+				<tr>
+				<td width="135" align="center" valign="top">
+		<script src=https://seal.verisign.com/getseal?host_name=www.purchasingpower.com&size=S&use_flash=NO&use_transparent=NO&lang=en></script>
+				<a href="http://www.verisign.com/ssl-certificate/" target="_blank" class="ssl">About SSL Certificates</a>
+				</td>
+				</tr>
+			</table>            
+			<p>Your personal information is safe with Purchasing Power</p>
+		</div>
+		<div class="sitemap group">
+				<div class="column">
+					<h4>Purchasing Power</h4>
+					    <ul>
+								
+									<li>
+										<a href="/storefront/spring/about-purchasing-power"
+										
+										name="&lid=Footer_PP_About">About Purchasing Power</a>
+									</li>
+								
+									<li>
+										<a href="http://www.purchasingpower.com/mediasvr/storefront/social/maint.html"
+										
+										name="&lid=Footer_PP_MyPowerStory">Testimonials</a>
+									</li>
+								
+									<li>
+										<a href="/storefront/spring/contact/start"
+										
+										name="&lid=Footer_PP_EmployerRequest">Tell Your Employer About Us</a>
+									</li>
+								
+									<li>
+										<a href="http://tbe.taleo.net/NA9/ats/careers/jobSearch.jsp?org=PURCHASINGPOWER&cws=1"
+										
+										name="&lid=Footer_PP_Careers">Careers</a>
+									</li>
+								
+									<li>
+										<a href="/storefront/spring/site-map"
+										
+										name="&lid=Footer_PP_SiteMap">Site Map</a>
+									</li>
+					    </ul>
+				</div>
+				<div class="column">
+					<h4>Members</h4>
+					    <ul>
+								
+									<li>
+										<a href="/storefront/spring/how-it-works"
+										
+										name="&lid=Footer_Members_How">How it Works</a>
+									</li>
+								
+									<li>
+										<a href="/storefront/spring/products"
+										
+										name="&lid=Footer_Members_Products">Products</a>
+									</li>
+								
+									<li>
+										<a href="/storefront/spring/customer-support/program-information/loyalty-program"
+										
+										name="&lid=Footer_Members_Loyalty">Loyalty Program</a>
+									</li>
+								
+									<li>
+										<a href="http://resp.survey01.net/servlet/survey?surveyId=MTMwNTYS1"
+										target="_blank"
+										name="&lid=Footer_Members_Survey">Take the Survey</a>
+									</li>
+					    </ul>
+				</div>
+				<div class="column">
+					<h4>Brokers</h4>
+					    <ul>
+								
+									<li>
+										<a href="http://www.purchasingpower.com/brokers/"
+										
+										name="&lid=Footer_Brokers_LearnMore">Learn More</a>
+									</li>
+								
+									<li>
+										<a href="http://www.purchasingpower.com/brokers/contact-purchasing-power/"
+										
+										name="&lid=Footer_Brokers_Contact">Contact Sales</a>
+									</li>
+								
+									<li>
+										<a href="http://173.203.243.67/"
+										target="_blank"
+										name="&lid=Footer_Brokers_Blog">Blog</a>
+									</li>
+					    </ul>
+				</div>
+				<div class="column">
+					<h4>Employers</h4>
+					    <ul>
+								
+									<li>
+										<a href="http://www.purchasingpower.com/employers/"
+										
+										name="&lid=Footer_Employers_LearnMore">Learn More</a>
+									</li>
+								
+									<li>
+										<a href="http://173.203.243.67/"
+										target="_blank"
+										name="&lid=Footer_Employers_Blog">Blog</a>
+									</li>
+					    </ul>
+				</div>
+				<div class="column">
+					<h4>Customer Support</h4>
+					    <ul>
+								
+									<li>
+										<a href="/storefront/spring/customer-support"
+										
+										name="&lid=Footer_Members_Support">Support Topics &amp; Tools</a>
+									</li>
+								
+									<li>
+										<a href="/storefront/spring/contact/start"
+										
+										name="&lid=Footer_Members_Contact">Contact Us</a>
+									</li>
+								
+									<li>
+										<a href="/storefront/spring/customer-support/policies/cancellations-returns"
+										
+										name="&lid=Footer_Members_CancellationsReturns">Return/Cancellation Policy</a>
+									</li>
+					    </ul>
+				</div>
+
+		</div>
+		<div class="contentLegal group">
+		    <p>
+		    	<span>Purchasing Power</span>
+offers a voluntary benefit program that helps employees buy computers, electronics and home appliances through the ease of payroll deduction.	   		</p>
+			<p>
+			   	<a href="/storefront/spring/terms-and-conditions" name="&lid=Footer_Terms">Terms and Conditions</a>
+	    		|
+	    		<a href="/storefront/spring/privacy-policy" name="&lid=Footer_Privacy">Privacy Policy</a>
+		    </p>
+		  </div>
+		
+
+</div>  </div>
+<!--
+<script src="http://www.purchasingpower.com/storefront/js/ui/jquery-1.4.2.min.js?S2013-1-loyalty-1" type="text/javascript"></script>
+<script src="http://www.purchasingpower.com/storefront/js/ui/jquery-ui.min.js?S2013-1-loyalty-1" type="text/javascript"></script>
+<script src="http://www.purchasingpower.com/storefront/js/ui/jquery.cycle.all.min.js?S2013-1-loyalty-1" type="text/javascript"></script>
+<script src="http://www.purchasingpower.com/storefront/js/ui/jquery.nivo.slider.js?S2013-1-loyalty-1" type="text/javascript"></script>
+<script src="http://www.purchasingpower.com/storefront/js/ui/newhovermenuparts.js?S2013-1-loyalty-1" type="text/javascript"></script>
+<script src="http://www.purchasingpower.com/storefront/js/ui/rotators-purchasing.js?S2013-1-loyalty-1" type="text/javascript"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/jquery.corner.js?S2013-1-loyalty-1"></script>
+
+    
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/addressValidationService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/cartService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/catalogService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/clientService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/contentService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/notificationService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/orderService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/orderPacketService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/userService.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/dwr/engine.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/yahoo-dom-event.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/selector-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/element-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/animation-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/dragdrop-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/logger-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/container-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/paginator-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/datasource-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/yui/history-min.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/util/autoTab.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/util/closure.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/validation/storefront-validator.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/base.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/shopping-base.js?S2013-1-loyalty-1"></script>
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/util/escape.js?S2013-1-loyalty-1"></script>
+
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/highslide/highslide.js?S2013-1-loyalty-1"></script>
+
+-->
+
+<script type="text/javascript">
+//<![CDATA[
+hs.registerOverlay({
+	html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
+	position: 'top right',
+	fade: 2 // fading the semi-transparent overlay looks bad in IE
+});
+
+
+hs.graphicsDir = '/storefront/js/highslide/graphics/';
+hs.wrapperClassName = 'borderless';
+hs.showCredits = false;
+
+//]]>
+</script>
+
+<script type="text/javascript">
+(function($) {
+  var
+  props = ['Width', 'Height'],
+  prop;
+ 
+  while (prop = props.pop()) {
+    (function (natural, prop) {
+      $.fn[natural] = (natural in new Image()) ? 
+      function () {
+        return this[0][natural];
+      } : 
+      function () {
+        var 
+        node = this[0],
+        img,
+        value;
+ 
+        if (node.tagName.toLowerCase() === 'img') {
+          img = new Image();
+          img.src = node.src,
+          value = img[prop];
+        }
+        return value;
+      };
+    }('natural' + prop, prop.toLowerCase()));
+  }
+}(jQuery));
+</script>
+
+
+    <!-- running block macro -->
+    <script language="javascript">
+    <!--//--><![CDATA[//><!--
+    (function()
+    {
+        YAHOO.namespace("storefront.pages.home");
+    // running jsonVar macro
+    YAHOO.storefront.pages.home.whyArticle = {"abstractContent":null,"articleDate":null,"author":null,"categories":[],"class":"class com.ppc.webcore.biz.bean.Article","clientIdExclusions":[],"clientIdInclusions":[],"code":"loginUsername.article","content":"Your User ID is the unique name you created when you initially set up your account with Purchasing Power. It may be your email address.","hideBannerControls":false,"id":4590,"imageUrl":null,"linkUrl":null,"sortOrder":null,"title":"Username","urlName":null};
+    // end jsonVar macro
+    })();
+    //--><!]]>
+    </script>
+    <!-- end block macro -->
+<script type="text/javascript" src="http://www.purchasingpower.com/storefront/js/pages/home.js?S2013-1-loyalty-1"></script>
+
+<!-- analytics -->
+	<!-- begin widget analyticsWidgetCommon -->
+	
+	<div id="analyticsWidgetCommon">
+
+<!-- Begin global "metrics tags" -->
+
+    <!-- MediaMind -->
+    <script type="text/javascript">
+        var ebSession = "d6cd790601d7fda68f9df6bc85a4";
+        var ebRand = Math.random() + "";
+        ebRand = ebRand * 1000000;
+        //<![CDATA[
+        document.write("<scr" + "ipt src=\"//bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&ActivityID=175950&rnd=\" + ebRand + \"&Session=" + ebSession + "\"></scr" + "ipt>");
+        //]]>
+    </script>
+    <noscript>
+        <img width="1" height="1" style="border:0" src="//bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&ActivityID=175950&Session=d6cd790601d7fda68f9df6bc85a4&ns=1"/>
+    </noscript>
+
+<!-- End global "metrics tags" -->
+
+
+<!-- SiteCatalyst code version: H.23.2.
+Copyright 1996-2011 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://www.purchasingpower.com/storefront/js/analytics/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+
+
+
+s.channel="Global"
+s.pageName="Global: Home"
+isProductPage = false;
+underscoreLocation = s.pageName.indexOf(" _:")
+if(underscoreLocation != -1) {
+	isProductPage = true;
+	s.pageName = s.pageName.substring(0, underscoreLocation) + s.pageName.substring(underscoreLocation + 3);
+}
+s.prop1=s.channel
+s.eVar1=s.pageName
+
+pageNameTokens = s.pageName.split(": ");
+s.prop7 = "";
+if(isProductPage) {
+	// If on a product page, then the fully-qualified product name goes in prop7...
+	s.prop7 = s.pageName;
+	// ... and is popped off the stack, so it will be ommitted from the normal point in the hierarchy
+	pageNameTokens.pop();
+}
+s.prop2 = pageNameTokens.length >= 2 ? pageNameTokens[0] + ": " + pageNameTokens[1] : "";
+s.prop3 = pageNameTokens.length >= 3 ? s.prop2 + ": " + pageNameTokens[2] : "";
+s.prop4 = pageNameTokens.length >= 4 ? s.prop3 + ": " + pageNameTokens[3] : "";
+s.prop5 = pageNameTokens.length >= 5 ? s.prop4 + ": " + pageNameTokens[4] : "";
+s.prop6 = pageNameTokens.length >= 6 ? s.prop5 + ": " + pageNameTokens[5] : "";
+s.hier1=s.prop1+","+s.prop2+","+s.prop3+","+s.prop4+","+s.prop5+","+s.prop6+","+s.prop7
+
+s.products=""
+s.purchaseID=""
+
+s.state=""
+s.zip=""
+
+s.events="event1"
+
+
+
+
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.23.2. -->
+	</div>
+	<!-- end widget analyticsWidgetCommon -->
+<!-- end analytics -->
+
+<!-- Begin Hiconversion Body Enabling. Do NOT move. Must come directly before the closing body tag -->
+<script id="hiconversion_body_script" type="text/javascript">
+  function hiconversion_body_run(arg) {
+    var then = new Date();
+    var diff = then - arg.ran;
+    if (diff < arg.wait) {
+      if (typeof hiconversion_body_update == "function") {
+        hiconversion_body_update({async: true, pass: arg.pass, ran: arg.ran, then: then });
+      } else {
+        arg.pass = arg.pass + 1;
+        setTimeout(function() { hiconversion_body_run(arg); }, 100);
+      }
+    }
+  }
+  hiconversion_body_run({ async: true, pass: 0, ran: new Date(), wait: 30000 });
+</script>
+
+<!-- End Hiconversion Body Enabling -->
